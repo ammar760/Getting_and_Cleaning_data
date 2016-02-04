@@ -33,8 +33,8 @@ Complete.Set <- rbind(train.complete, test.complete)
 Extracted.set <- select(Complete.Set, Subject, Activity.ID, Activity.Name, matches("Mean"), matches("std"))
 
 ## Extract tidy data set for average on each variable. 
-Tidy.dataSet <- select(Complete.Set, Subject, Activity.ID, Activity.Name, -Activity.ID, matches("Mean")) %>%
+Tidy.dataSet <- select(Extracted.set, Subject, Activity.ID, Activity.Name, -Activity.ID, 4:89) %>%
                 group_by(Subject, Activity.Name) %>% 
                 summarise_each(funs(mean))
 ## Write tidy data set in a file. 
-write.table(Tidy.dataSet, file = "./tidy_dataSet.csv", sep = ",", row.names = FALSE)
+write.table(Tidy.dataSet, file = "./tidy_dataSet.txt", sep = ",", row.names = FALSE)
