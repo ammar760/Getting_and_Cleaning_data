@@ -71,4 +71,5 @@ There are 30 subjects with 6 activity were performed.
 "fBodyAccJerk-std()-Z"                 "fBodyGyro-std()-X"                   
 "fBodyGyro-std()-Y"                    "fBodyGyro-std()-Z"                   
 "fBodyAccMag-std()"                    "fBodyBodyAccJerkMag-std()"           
-"fBodyBodyGyroMag-std()"               "fBodyBodyGyroJerkMag-std()"   
+"fBodyBodyGyroMag-std()"               "fBodyBodyGyroJerkMag-std()"  
+
