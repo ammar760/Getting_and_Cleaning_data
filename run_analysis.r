@@ -38,3 +38,4 @@ Tidy.dataSet <- select(Extracted.set, Subject, Activity.ID, Activity.Name, -Acti
                 summarise_each(funs(mean))
 ## Write tidy data set in a file. 
 write.table(Tidy.dataSet, file = "./tidy_dataSet.txt", sep = ",", row.names = FALSE)
+ 
